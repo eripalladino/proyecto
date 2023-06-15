@@ -16,10 +16,10 @@ const ListUser = () => {
     
     <div className="Cards-List">
     
-        {chars.map(() => {
+        {chars.map((char) => {
             return(
-                <div style={{margin: 10}}>
-                    <CardUser />
+                <div style={{margin: 10}} key={char.id}>
+                    <CardUser char={char}/>
                 </div>
             )
         })}        
