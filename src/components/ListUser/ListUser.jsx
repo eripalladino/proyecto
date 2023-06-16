@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react'
 import CardUser from "../CardUser/CardUser"
 import "./ListUser.css"
 
+import {Link} from "react-router-dom"
 
 const ListUser = () => {
     const [chars, setChars] = useState([]);
@@ -20,7 +21,9 @@ const ListUser = () => {
         {chars.map((char) => {
             return(
                 <div style={{margin: 10}} key={char.id}>
-                    <CardUser char={char}/>
+                  <Link to={`detail/${char.id}`}>
+                  <CardUser char={char}/>
+                  </Link>
                 </div>
             )
         })}        
