@@ -24,4 +24,5 @@
 .nav-link{
     color: rgb(46, 48, 47);
     list-style-type: none;
+    text-decoration: none;
 }

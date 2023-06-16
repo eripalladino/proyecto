@@ -1,24 +1,32 @@
 import './App.css'
 import * as React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 //componentes
 import Header from './components/Header/Header'
 import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import ListUser from './components/ListUser/ListUser'
+
+//pages
+import HomePage from './Pages/HomePage/HomePage';
+import AboutPage from './Pages/AboutPage/AboutPage';
+import ContactPage from './Pages/ContactPage/ContactPage';
+import DetailPage from './Pages/DetailPage/DetailPage';
 
 class App extends React.Component {
   render() {
     return (
-      
-      <div className='App'>
-        <Header />
-        <NavBar />
-        <div className='saludo'>
-        <ItemListContainer greeting="Bienvenidos a Nuestra E-Commerce"/>
+      <Router>
+        <div className='App'>
+          <Header />
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/detail/:id" element={<DetailPage />} />
+          </Routes>
         </div>
-        <ListUser />
-      </div>
+      </Router>
     )
   }
 }

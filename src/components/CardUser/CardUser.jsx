@@ -4,8 +4,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
-import IconButton from '@mui/material/IconButton';
 
 const CardUser = ({ char }) => {
   return (
@@ -25,8 +23,8 @@ const CardUser = ({ char }) => {
             {char.category}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            ${char.price}
-          </Typography>
+            ${char.price} 
+          </Typography>          
         </CardContent>
       </CardActionArea>
     </Card>
