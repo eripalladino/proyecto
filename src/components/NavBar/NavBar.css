@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-container{
+    background-color: #FF5733 ;
+    color: rgb(46, 48, 47);
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-link{
+    color: rgb(46, 48, 47);
+    list-style-type: none;
+}

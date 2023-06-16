@@ -1,32 +1,18 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+import React from 'react'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import "./NavBar.css"
 
-export default function ButtonAppBar() {
+const NavBar = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
-  );
+    <nav className='nav-container'>
+      <ul className='nav-ul'>
+        <li className='nav-link'>Inicio</li>
+        <li className='nav-link'>About</li>
+        <li className='nav-link'>Contact</li>
+        <li className='nav-link'> <ShoppingCartIcon/> <span>2</span> </li>
+      </ul>
+    </nav>
+  )
 }
+
+export default NavBar
