@@ -12,7 +12,7 @@ const CardUser = ({ char }) => {
         <CardMedia
           component="img"
           height="140"
-          image={char.image} sx={{ height: 250, width: 200 }}
+          image={char.thumbnail} sx={{ height: 250, width: 200 }}
           alt="image"
         />
         <CardContent>

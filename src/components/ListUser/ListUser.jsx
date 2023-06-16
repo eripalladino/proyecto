@@ -9,8 +9,7 @@ const ListUser = () => {
 
     useEffect(() => {
        
-      axios("https://fakestoreapi.com/products").then(json => setChars(json.data))
-    
+      axios("https://dummyjson.com/products").then(json => setChars(json.data.products))
             
     }, []);
 
