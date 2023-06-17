@@ -1,0 +1,49 @@
+.container {
+    margin: auto;
+}
+
+.detail {
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.detail .detail-image{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.detail .detail-image img{
+    max-width: 20rem;
+    height: auto;
+}
+.detail .content{
+    font-size: 10px;
+    padding: 20px;
+}
+
+.detail .content h1{
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    color: #FF5733;
+}
+
+.detail .content h6{
+    
+    height: auto;
+    font-size: 15px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    color: #FF5733;
+}
+
+.detail .content p{
+    margin: 10px;
+    text-align: center;
+}
