@@ -9,9 +9,12 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Typography from '@mui/material/Typography'
 
 const options = [
-  <Link to="/about" className="nav-link">Smartphone</Link>,
-  <Link to="" className="nav-link">Laptops</Link>,
-  <Link to="" className="nav-link">Perfumeria</Link>,
+  <Link to="/category/smartphones" className="nav-link" >Smartphone</Link>,
+  <Link to="/category/laptops" className="nav-link" >Laptops</Link>,
+  <Link to="/category/fragrances" className="nav-link" >Fragrances</Link>,
+  <Link to="/category/skincare" className="nav-link" >Skincare</Link>,
+  <Link to="/category/groceries" className="nav-link" >Groceries</Link>,
+  <Link to="/category/home-decoration" className="nav-link" >Home-Decoration</Link>,
 ];
 
 const ITEM_HEIGHT = 30;
@@ -65,7 +68,7 @@ export default function LongMenu() {
           }}
         >
           {options.map((option) => (
-            <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
+            <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}> 
               {option}
             </MenuItem>
           ))}

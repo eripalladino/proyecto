@@ -11,6 +11,7 @@ import HomePage from './Pages/HomePage/HomePage';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import DetailPage from './Pages/DetailPage/DetailPage';
+import CategoryPage from './Pages/CategoryPage/CategoryPage'
 
 class App extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class App extends React.Component {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/detail/:id" element={<DetailPage />} />
+            <Route path="/category/:categoryId" element={<CategoryPage />} />
           </Routes>
         </div>
       </Router>
