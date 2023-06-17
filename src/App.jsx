@@ -12,6 +12,7 @@ import AboutPage from './Pages/AboutPage/AboutPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import DetailPage from './Pages/DetailPage/DetailPage';
 import CategoryPage from './Pages/CategoryPage/CategoryPage'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 class App extends React.Component {
   render() {
@@ -26,6 +27,7 @@ class App extends React.Component {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/detail/:id" element={<DetailPage />} />
             <Route path="/category/:categoryId" element={<CategoryPage />} />
+            <Route path="/item-detail/:id" element={<ItemDetailContainer/>}/>
           </Routes>
         </div>
       </Router>
